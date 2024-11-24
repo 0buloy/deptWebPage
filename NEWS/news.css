@@ -1,0 +1,1047 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+.navBar {
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-color: #ede6d6;
+  z-index: 9999;
+  height: 100px;
+}
+#navbarNav {
+    color: #373f34;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-item {
+    list-style-type: none !important; 
+    display: inline-block !important;
+    padding: 10px 20px !important;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1) !important;
+}
+
+.nav-link:hover {
+    color: #FFE85C;
+    transition: .3s;
+}
+.shopBtn {
+    padding-left: 40px;
+}
+
+.button {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #373f34;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #FFE85C;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: #57A44D;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.button:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+.container1{
+    background-color: #ede6d6;
+    width: 100%;
+    height: 1000px;
+}
+.NewsEvent h1{
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 120px;
+        padding-top: 350px; 
+}
+.NewsEvent p{
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    font-family: 'Poppins';
+    line-height: 60px;
+}
+.container2{
+    background-color: #343F36;
+    width: 100%;
+    height: 120px;
+    display:flex; 
+}
+.container2 h1{
+    font-size: 50px;
+    font-family: 'Poppins';
+    color: #FCD733;
+    padding-top:30px;
+    padding-left: 80px;
+    letter-spacing: 3px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 80px;
+    text-align: center;
+  
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(50, 28, 48, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: 10px;
+    padding-bottom:40px;
+  }
+  .wrapper i:last-child{
+    right: 10px;
+    padding-bottom:40px;
+
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-left:100px;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel .card {
+    scroll-snap-align: start;
+    height:250px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 25px;
+    flex-direction: column;
+  }
+  .carousel .card .img {
+    height: 60%;
+    width: auto;
+    object-fit: cover;  
+    border-radius: 10px; 
+    -webkit-transition-property: ;
+  }
+  .card .img img {
+    width: 101%;
+    height: auto;
+    object-fit:cover;
+    padding-top: 40px;
+    border-radius: 5px;
+  }
+  .carousel .card span {
+    padding-top: 70px;
+    color: black;
+    font-size: 20px;
+    font-style: Montserrat;
+
+  }
+.section3{
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: #343F36;
+}
+  #right{
+    font-size: 20px;
+  
+    
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+  .container3{
+    background-color: #ffffff;
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+    height: 200px;
+    padding-right: 400px;
+    position: relative;
+    
+}
+.container3 h1{
+  width: 200px;
+  color: #57A44D;
+  padding-right: 100px;
+  width: 50%;
+  padding-right: 200px;
+  padding-bottom: 10PX; /* Set the desired length of the underline */
+  margin: 0 auto; /* Add this line for horizontal center alignment */
+}
+.container3 h1::after {
+  content: "";
+  display: block;
+  width: 300%; /* Adjust the length of the underline here */
+  border-bottom: 2px solid #aaa;
+  margin-top: 5px; /* Adjust the spacing between text and underline here */
+  padding-left: 200px;
+}
+  
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 0 0 auto; /* Prevent image from growing */
+  padding-left: 350px;
+  padding-top: 10px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.text-container {
+  flex: 1 1 auto; /* Allow text container to grow */
+}
+
+.text-container h2 {
+  padding-left: 200px;
+}
+
+.text-container p {
+  padding-bottom: 300px;
+  padding-left: 200px;
+} 
+
+.section4 {
+  height: 650px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 90px 0; /* Adjust the value as needed */
+
+}
+.section4 h1 {
+  padding-left: 220px;
+  padding-bottom: 240px;
+  font-size: 32px;
+  margin: 0;
+letter-spacing: 2px;
+  /* width: 20px; */
+  /* top: 0;
+  right: 4;
+  z-index: 500; */
+}
+.section4 h1::after {
+  content: "";
+  display: block;
+  width: 780px; /* Set the desired width of the underline */
+  border-bottom: 2px solid #aaa;
+  margin-top: 8px; /* Adjust the spacing between text and underline here */
+  margin-left: 0; /* Remove the left margin */
+  padding-top: 5px;
+}
+
+.LatestNews{
+  height: -1250px;
+}
+
+/* Styling the three events section */
+section .events {
+  position: relative;
+  width: 60%;
+  height: 50%;
+  /* padding-bottom: 400px; */
+  box-sizing: border-box;
+  padding-left: 200px; 
+}
+/* Styling the links of
+the events section */
+section .events ul {
+  transform: translateY(-50%);
+  margin: 0;
+  box-sizing: border-box;
+  margin-left: auto;
+  width: 800px;  
+
+}
+/* Styling the lists of the event section */
+section .events ul li {
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 20px 0;
+  height: 150px; 
+}
+
+/* Styling the time class of events section */
+section .events ul li .time {
+  position: relative;
+  padding: 30px;
+  background-color: #343F36;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: .5s;
+}
+/* Styling the hover effect
+  of events section */
+section .events ul li:hover .time {
+  background: #cfe56e;
+}
+/* Styling the header of time
+  class of events section */
+section .events ul li .time h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+  line-height: 30px;
+}
+/* Styling the texts of time
+class of events section */
+section .events ul li .time h2 span {
+  font-size: 30px;
+}
+
+/* Styling the details
+class of events section */
+section .events ul li .details {
+  padding: 20px;
+  background: #dae5d9;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+  padding-bottom: 30px;
+}
+/* Styling the header of the
+details class of events section */
+section .events ul li .details h3 {
+  position: relative;
+  font-size: 20px;
+ 
+
+}
+/* Styling the lists of details
+class of events section */
+section .events ul li .details p {
+  position: relative;
+  margin: 2px 0 0;
+  font-size: 12px;
+  font-style: Poppins;
+
+}
+/* Styling the links of details
+class of events section */
+section .events ul li .details a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1.5px solid #464141ac;
+  margin-top: 8px;
+  font-size: 10px;
+  transition: .5s;
+
+}
+/* Styling the details class's hover effect */
+section .events ul li .details a:hover {
+  background: #e91e63;
+  color: #fff;
+  border-color: #e91e63;
+}
+.section4 ul {
+  margin-top: 20px; /* Add margin to bring down the <li> elements */
+}
+
+.section4 ul li {
+  margin-bottom: 20px; /* Add margin at the bottom of each <li> element */
+}
+/*GRId container*/
+.grid-container  {
+  display: flex;
+  grid-template-columns: 1fr 1fr; /* Divide into two equal columns */
+  gap: 20%; /* Adjust the gap between grid items as needed */
+  height: 1200px;
+  width: 100%;
+  align-items: flex-start; /* Align items to the top of the grid */
+}
+/* gridup */
+
+.gridup{
+  /* z-index: 350px; */
+  flex-direction: column;
+  /*border: 1px solid black;*/
+  background-color: #ede6d6; /*papaltan pa ng kulay na nasa figma ni vincent*/
+
+}
+.gridup h5{ 
+  padding-top: 0.78rem;
+  font-size: 20px;
+  padding-left: 10px;
+  letter-spacing: 2px;
+  
+}
+.gridup h5::after {
+  content: "";
+  display: block;
+  width: 300px; /* Set the desired width of the underline */
+  border-bottom: 2px solid #aaa;
+  margin-top: 8px; /* Adjust the spacing between text and underline here */
+  margin-right: 10px; /* Remove the left margin */
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.gridup h6{
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
+.gridup p{
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+.wrapper1{
+
+  width: 300px;
+  text-align: justify;
+}
+
+.wrapper1 .content{
+  padding-right: 10px;
+  padding:5px;
+}
+
+
+
+
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  padding-top: 200px;
+  height: 450px;
+
+}
+
+.team .team-item {
+  position: relative;
+  margin-bottom: 35px;
+  width: 250px;
+}
+
+.team .team-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  
+}
+
+.team .team-img img {
+  width: 100%;
+  transform: scale(1.1);
+  margin-bottom: -15px;
+  transition: .3s;
+}
+
+.team .team-item:hover img {
+  margin: -15px 0 0 0;
+}
+
+.team .team-text {
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 96px;
+  bottom: 0;
+  left: 20px;
+  padding: 22px 0;
+  text-align: center;
+  background: #ffffff;
+  transition: .3s;
+  overflow: hidden;
+}
+
+.team .team-text h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team .team-text p {
+  margin-bottom: 20px;
+}
+
+.team .team-social {
+  position: relative;
+  font-size: 0;
+}
+
+.team .team-social a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 3px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #4a4c70;
+  border: 2px solid #FDBE33;
+  transition: .3s;
+}
+
+.team .team-social a:hover {
+  color: #20212B;
+  background: #FDBE33;
+}
+
+.team .team-item:hover .team-text {
+  height: 160px;
+}
+
+/* PRODUCTS */
+.product {
+  align-items: center;
+  background-color: #d3dcd5;
+  padding-top: 50px;
+  height: 480px;
+  width: 100%;
+  /* padding-top:500px */
+}
+.product h2{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 35px;
+  text-align: center;
+  padding-left: 30px;
+  font-family: 'Poppins';
+  word-spacing: 2px;
+  letter-spacing: 5px;
+  color:#343F36;
+}
+.product h5{
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+  font-style:normal;
+}
+.product-category {
+  padding: 10 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 5vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 500px;
+  width: 100%;
+
+}
+.product-container::-webkit-scrollbar {
+  display:none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 300px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-btn {
+  position: absolute;
+  align-items: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background:#f3ed46;
+  color: #343F36;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:290%;
+  display: flex;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+
+}
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+/*footer*/
+.container3{
+background-image: url("img/f.png");
+width: 100%;
+height: 400px;
+background-size: cover;
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-links{
+    display: flex;
+}
+.social-links a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #03791f;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%; 
+    position: relative;
+}
+
+.social-links a .fa{
+    font-size: 400px;
+    line-height: 1500px;
+}
+
+.fb-icon{
+    font-size: 40px;
+    line-height: 2500px;
+    color: #03791f;
+}
+
+.ig-icon{
+    font-size: 40px;
+    line-height: 2500px;
+    color: #03791f;
+}
+/* design */
+.design{
+  padding-left: 30px;
+  margin: 2rem auto; /* Use auto for horizontal margin to center the section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%; /* Optional: Set a maximum width for the section */
+}
+
+
+ 
+.title {
+  text-align: center;
+  padding: 1rem 0;
+
+}
+.title h2 {
+  padding-top: 40px;
+  font-family: 'Poppins';
+  font-size: 2.4rem;
+  padding-left: 90px;
+}
+.title p{
+  font-family: 'montserrat';
+  text-transform: uppercase;
+  padding-left: 90px;
+  font-size: 18spx;
+}
+.design-content {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 2rem; /* Adjust the gap between items as needed */
+}
+.design-item{
+  cursor: pointer;
+  width: 100%; 
+}
+
+.design-img {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  width: 400px;
+  padding-bottom: 70%; /* Adjust the aspect ratio as needed (e.g., 75% for 4:3 aspect ratio) */
+}
+
+.design-img::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio and fill the container */
+    transition:  all 0.5s ease;
+}
+
+.design-item:hover img{
+  transform: scale(1.2);
+}
+
+.design-img span:first-of-type{
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  background: var(--exDark);
+  color: #fff;
+  padding: 0.25rem 1rem;
+}
+
+.design-title {
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.design-title a{
+  color: var(--dark);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: var(--Playfair);
+}
+
+/* Styling for newsletter section */
+.newsletter {
+  height: 275px;
+  background-color: #dfe8e0;
+  padding: 20px;
+  width: 107%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.newsletter .content1 {
+  max-width: 500px;
+}
+
+.content1 h3{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.content1 p{
+  font-size: 13px;
+  color: #262525;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  text-align: justify;
+}
+
+.email {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 260px;
+  margin-right: 10px;
+}
+
+.content1 .btn{
+  margin-left: 3px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.section5{
+  width: 100%;
+  height: 690px;
+  margin-top: 850px;
+}
+
+.section6{
+  width: 100%;
+  height: 1200px;
+}
+
+.section7 {
+  background-image: url("img/f.png"); 
+  width: 100%; 
+  height: 400px; 
+  background-size: cover;
+  position:relative; 
+  top: 0; 
+  left: 0; 
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-links{
+  display: flex;
+}
+.social-links a{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #03791f;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+  margin: 0 30px;
+  border-radius: 50%; 
+  position: relative;
+}
+
+.social-links a .fa{
+  font-size: 400px;
+  line-height: 1500px;
+}
+
+.fb-icon{
+  font-size: 40px;
+  line-height: 2500px;
+  color: #03791f;
+}
+
+.ig-icon{
+  font-size: 40px;
+  line-height: 2500px;
+  color: #03791f;
+}

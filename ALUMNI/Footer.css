@@ -1,0 +1,46 @@
+.container3{
+background-image: url("f.png");
+width: 100%;
+height: 400px;
+background-size: cover;
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-links{
+    display: flex;
+}
+.social-links a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #03791f;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%; 
+    position: relative;
+}
+
+.social-links a .fa{
+    font-size: 400px;
+    line-height: 1500px;
+}
+
+.fb-icon{
+    font-size: 40px;
+    line-height: 2500px;
+    color: #03791f;
+}
+
+.ig-icon{
+    font-size: 40px;
+    line-height: 2500px;
+    color: #03791f;
+}

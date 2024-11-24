@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+.navBar {
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    background-color: #ede6d6;
+    z-index: 9999;
+    height: 100px;
+}
+#navbarNav {
+    color: #373f34;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-item {
+    list-style-type: none !important; 
+    display: inline-block !important;
+    padding: 10px 20px !important;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1) !important;
+}
+
+.nav-link:hover {
+    color: #FFE85C;
+    transition: .3s;
+}
+.shopBtn {
+    padding-left: 40px;
+}
+.button {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #373f34;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 120%;
+    background-color: #FFE85C;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: #57A44D;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #73ca73;
+}
+
+.button:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+.button3 {
+    margin-top: 65px;
+    position: relative;
+    padding: 10px 22px;
+    background: #373f34;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.button3:active {
+    transform: scale(0.96);
+}
+.button3::before,
+.button3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 150%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.button3::before {
+    top: -70%;
+    background-image: radial-gradient(circle,  #373f34 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #373f34 20%, transparent 30%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%,#373f34 15%, transparent 20%),
+    radial-gradient(circle,#373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    animation: topBubbles 0.7s ease-in-out infinite;
+}
+@keyframes topBubbles {
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+.button3::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #373f34 15%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%),
+    radial-gradient(circle, #373f34 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%, 70% 0%;
+    animation: bottomBubbles 0.7s ease-in-out infinite;   
+}
+@keyframes bottomBubbles {
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105%, 0;
+    }    
+    100% {
+        background-position:  0% 90%, 20% 90%, 45% 70%, 60%, 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; 
+    }
+}
+.container2{
+    font-family: 'poppins';
+    background-color: #ede6d6;
+    color: #373f34;
+    width: 100%;
+    height: 1000px;
+}
+.Research{
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 120px;
+    padding-top: 350px;
+    font-weight: bolder;
+}
+.Research_container {
+    font-family: 'poppins';
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("comsoc.jpg");
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.left-text {
+    margin-left: 130px;
+    margin-top: 70px;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.center-text2 {
+    margin-left: 550px;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.book-mein{
+    margin-top: 210px;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+.book{
+    margin-top: 200px;
+    width: 30%;
+    height: 500px;
+    display: inline-block;
+    margin: 5px;
+    background: #fff;
+    transform-style: preserve-3d;
+    box-shadow: inset 100px 0 50px rgba(0,0,0,.2), 0 20px 50px rgba(0,0,0,.2);
+    transition: 1s;
+}
+.book:hover{
+    box-shadow:inset 20px 0 50px rgba(0,0,0,.5), 0 10px 50px rgba(0,0,0.5);
+}
+.book:before{
+    margin-top: 100px;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100px;
+    height: auto;
+    background: #000;
+    transform-origin: bottom;
+    transform:skewX(-45deg);
+}
+.book:after{
+    margin-top: 100px;
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 40px;
+    width: 5px;
+    height: 300px;
+    background: rgb(39,34,34);
+    transform-origin: left;
+    transform:skewY(-45deg);
+}
+.imgbox img{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 9999;
+}
+.book .imgbox{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+    z-index: 9999;
+
+}
+.book:hover .imgbox{
+    transform: rotateY(-135deg);
+}
+.book .content{
+    height: 300px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: -99;
+    padding: 30px;
+}
+.content h1{
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+}
+.content p{
+    font-family: 'poppins';
+    font-size: 12px;
+    font-weight: 100;
+    color: #000;
+    text-align: justify;
+}
+@media only screen and (max-width:767px)
+
+{
+    .book-mein{
+        width: 50%;
+    }
+    .imgbox img{
+        height: 300px;
+    }
+    .book{
+        width: 100%;
+        height: 300px;
+        
+    }
+}
+@media only screen and (max-width:549px){
+    .book-mein{
+        width: 50%;
+    }
+    .imgbox img{
+        height: 300px;
+    }
+    .book{
+        width: 100%;
+        height: 300px;
+        margin: 10px 0px;
+    }
+}
+.container3{
+    background-image: url("f.png");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    
+    }
+    
+    .hero{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .social-links{
+        display: flex;
+    }
+    .social-links a{
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        text-decoration: none;
+        color: #03791f;
+        box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+        margin: 0 30px;
+        border-radius: 50%; 
+        position: relative;
+    }
+    
+    .social-links a .fa{
+        font-size: 400px;
+        line-height: 1500px;
+    }
+    
+    .fb-icon{
+        font-size: 40px;
+        line-height: 2500px;
+        color: #03791f;
+    }
+    
+    .ig-icon{
+        font-size: 40px;
+        line-height: 2500px;
+        color: #03791f;
+    }

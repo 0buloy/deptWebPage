@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Research</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/94762e9852.js"></script>
+
+        <!-- Bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <style>
+            hr {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                color: #FFFFFF;
+            }
+        </style>
+        </hr>
+    </head>
+    <body>
+        <nav class="navbar navBar navbar-expand-lg position-fixed top-0 end-0 start-0">
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HOMEPAGE/homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ABOUTUS/AboutUs.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../RESEARCH/Research.html">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ALUMNI/Alumni.html">Alumni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../NEWS/News.html">News & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../RECOGNITION/Recognition.html">Recogniton</a>
+                        </li>
+                        <div class="d-flex align-items-center shopBtn" >
+                            <a href="../COMSHOP/index.php">
+                                <button class="button type1" >
+                                    <span class="btn-txt">SHOP NOW</span>
+                                </button>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <section class="container2">
+            <div>
+                <h1 class="Research">RESEARCH</h1>
+            </div>
+        </section>
+        <section class="Research_container">
+            <br>
+            <h1 class="left-text">Computer Society Researches</h1>
+            <hr/>
+            <br>
+            <br>
+            <section class="book-mein">
+                <div class="book">
+                    <div class="imgbox">
+                        <img src="R1.png">
+                    </div>
+                    <div class="content">
+                        <h1>Executive Summary</h1>
+                        <p>The general purpose of the study was to develop a system called
+                            KATIPUNAN NG KABATAAN INFORMATION SYSTEM. This system provided
+                            a modern solution to the lack of a consolidated and updated database that
+                            contains relevant information about the youth of Barangay Sampiruhan,
+                            Calamba City. <br>
+                            <br>
+                            According to Bidani (n.d.), implementing Barangay Management
+                            Information Systems (BMIS) assisted in identifying barangay requirements,
+                            which is critical for planning nutrition and development, implementing initiatives,
+                            monitoring progress, and assessing them.</p></br>
+                            <button class="button3" onclick="openDrive1()">View more</button>
+                    </div>
+                </div>
+                <section class="book">
+                    <div class="imgbox">
+                        <img src="R2.png">
+                    </div>
+                    <div class="content">
+                        <h1>Executive Summary</h1>
+                        <p>Scholarship management entails a tremendous amount of effort in order to accomodate 
+                           each scholar's requirements, validate and save a copy of their profiles and documents,
+                           as well as to forwarding these files to its respective government body or
+                           organization that provides the scholarship.<br>
+                           <br>
+                           Responsible for that type of transaction if the office of the Student Affairs and 
+                           Services (OSAS) of the Polytechnic University of the Philippines - Sto.Tomas Branch, 
+                           a functional entity that scopes the services and activitues to enhance student life.</p></br>
+                           <button class="button3" onclick="OpenDrive2()">View more</button>
+                    </div>
+                </section>
+                <section class="book">
+                    <div class="imgbox">
+                        <img src="R3.png">
+                    </div>
+                    <div class="content">
+                        <h1>Executive Summary</h1>
+                        <p>"BaristaffLog: An Employee Management System for Kafe Kultura" was the researchers add
+                            developers capstone project. This program would help Kafe Kultura's owner and staff 
+                            organize their personel efficiently. It would let shop manager record, track and manage 
+                            personnel schedules. <br>
+                            <br>
+                            BarristaffLog was created to boost employee happiness and productivity to help the company
+                            achieve its goals. It would boost the company's digitalization and automation.
+                            The system also safeguarded all user and service provider personal data.</p></br>
+                            <button class="button3" onclick="opendrive3()">View more</button>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="container3">
+            <i class='bx bxl-facebook-circle'></i>
+                <script>
+                    const button3 = document.querySelector(".button");
+                    button3.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        button3.classList.add("animate");
+                    });
+                function openDrive1() {
+                      window.open("https://drive.google.com/file/d/14c5m-D0qMXBeQf4e5G8Zs37VXTLovYZP/view?usp=sharing", "_blank", "width=600,height=400");
+                }
+                function OpenDrive2() {
+                      window.open("https://drive.google.com/file/d/1u5vHGLQ8a4yXKWBUNsxZ0n6hlt4yfdUi/view?usp=sharing", "_blank", "width=600,height=400");
+                }
+                function opendrive3() {
+                      window.open("https://drive.google.com/file/d/1q-iOqqCdptAr3dT9L0RcR5suDu9MOhFC/view?usp=sharing", "_blank", "width=600,height=400");
+                }
+                </script>
+                <footer>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <center>
+                                <img src="CSL.png" class="logo">
+                            </center>
+                            <br>
+                            <h4><center><strong>Computer Society</strong></center></h4>
+                            <h5><center>Polytechnic University of the Philippines, Sto. Tomas Batangas</center></h5>
+                            <br>
+                        </div>
+                        <div class="hero">
+                            <h6><center><em>Follow us on our Social Media Accounts</em></center></h6>
+                            <div class="circle-container">
+                                <a href="https://www.facebook.com/PUPSTBCS"><i class="fa-brands fa-facebook fb-icon"></i></a>
+                                <a href="https://www.instagram.com/pupstb.computersociety/"><i class="fa-brands fa-instagram  ig-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+        </section> 
+    </body>
+</html>
